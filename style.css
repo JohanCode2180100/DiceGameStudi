@@ -1,0 +1,272 @@
+* {
+  font-family: Lato, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+ion-app {
+  width: 100%;
+  height: 100%;
+  border: 5px solid brown;
+}
+ion-grid {
+  background-color: #fdfbed;
+}
+
+ion-col {
+  color: black;
+  text-align: center;
+}
+
+ion-icon {
+  color: red;
+}
+.align {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.right {
+  font-size: 45px;
+  text-align: right;
+}
+.left {
+  font-size: 40px;
+  text-align: left;
+}
+.round {
+  color: red;
+  font-size: 70px;
+}
+p {
+  font-size: 20px;
+}
+img {
+  width: 200px;
+  height: 200px;
+}
+.current {
+  width: 150px;
+  margin: 0px auto;
+  background: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.playerDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active1 {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  background-color: red;
+  border-radius: 50%;
+  visibility: hidden;
+}
+
+.active2 {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  background-color: red;
+  border-radius: 50%;
+  visibility: hidden;
+}
+
+@media screen and (min-width: 280px) {
+  .playerDisplay {
+    width: 100px;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  .current {
+    width: 50px;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .active1 {
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    background-color: red;
+    border-radius: 50%;
+    visibility: hidden;
+  }
+
+  .active2 {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    background-color: red;
+    border-radius: 50%;
+    visibility: hidden;
+  }
+  .right {
+    font-size: 20px;
+    text-align: right;
+  }
+  .left {
+    font-size: 20px;
+    text-align: left;
+  }
+  .round {
+    color: red;
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 390px) {
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  .current {
+    width: 70px;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .active1 {
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+    background-color: red;
+    border-radius: 50%;
+    visibility: hidden;
+  }
+
+  .active2 {
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+    background-color: red;
+    border-radius: 50%;
+    visibility: hidden;
+  }
+  .right {
+    font-size: 20px;
+    text-align: right;
+  }
+  .left {
+    font-size: 20px;
+    text-align: left;
+  }
+  .round {
+    color: red;
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  .current {
+    width: 120px;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .active1 {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    background-color: red;
+    border-radius: 50%;
+    visibility: hidden;
+  }
+
+  .active2 {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    background-color: red;
+    border-radius: 50%;
+    visibility: hidden;
+  }
+  .right {
+    font-size: 20px;
+    text-align: right;
+  }
+  .left {
+    font-size: 20px;
+    text-align: left;
+  }
+  .round {
+    color: red;
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  img {
+    width: 400px;
+    height: 400px;
+  }
+  .current {
+    width: 200px;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .active1 {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    background-color: red;
+    border-radius: 50%;
+    visibility: hidden;
+  }
+
+  .active2 {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    background-color: red;
+    border-radius: 50%;
+    visibility: hidden;
+  }
+  .right {
+    font-size: 20px;
+    text-align: right;
+  }
+  .left {
+    font-size: 20px;
+    text-align: left;
+  }
+  .round {
+    color: red;
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 40px;
+  }
+}

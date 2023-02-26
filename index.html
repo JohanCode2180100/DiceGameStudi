@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- import lato google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- import jsdelivr to access the Framework from a CDN -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
+
+    <title>DICE GAME</title>
+  </head>
+  <body>
+    <ion-app id="app">
+      <ion-content fullscreen="true" class="content">
+        <!-- first row icon + start game button -->
+        <ion-grid>
+          <ion-row>
+            <ion-col size="12"
+              ><ion-button id="startGame" fill="clear" color="dark"
+                ><ion-icon class="red" name="add-circle-outline"></ion-icon>NEW
+                GAME</ion-button
+              ></ion-col
+            >
+          </ion-row>
+        </ion-grid>
+        <!-- Second row PLAYERS -->
+        <ion-grid class="second-row">
+          <ion-row
+            style="height: auto"
+            class="ion-align-items-center"
+            class="space"
+          >
+            <ion-col size="3" class="playerDisplay">
+              <p class="victoryplayer1">PLAYER 1</p>
+              <span class="active1"></span>
+            </ion-col>
+            <ion-col size="1"></ion-col>
+            <ion-col offset=""></ion-col>
+            <ion-col size="1"></ion-col>
+
+            <ion-col size="3" class="playerDisplay">
+              <span class="active2"></span>
+              <p class="victoryplayer2">PLAYER 2</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <!-- ROUND SCORE AND DICE PICTURES -->
+        <ion-grid>
+          <ion-row style="height: auto">
+            <ion-col size="3" class="round" id="roundScore1"></ion-col>
+            <ion-col size="1"></ion-col>
+            <ion-col><img class="dicePictures" /></ion-col>
+            <ion-col size="1"></ion-col>
+            <ion-col size="3" class="round" id="roundScore2"></ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <!-- CUURENT AND ROLL DICE - HOLD BUTTON -->
+        <ion-grid>
+          <ion-row class="ion-align-items-center" style="height: auto">
+            <ion-col size="3">
+              <div class="current">
+                <p style="color: black">CURRENT</p>
+                <p id="currentScorePlayer1" style="color: white"></p>
+              </div>
+            </ion-col>
+            <ion-col size="1"></ion-col>
+            <ion-col size="4" class="align">
+              <ion-row class="ion-justify-content-center">
+                <ion-button id="rollDice" fill="clear" color="dark">
+                  <ion-icon class="red" name="sync-outline"></ion-icon>ROLL DICE
+                </ion-button> </ion-row
+              ><ion-row class="ion-justify-content-center">
+                <ion-button id="hold" fill="clear" color="dark">
+                  <ion-icon class="red" name="log-in-outline"></ion-icon>HOLD
+                </ion-button></ion-row
+              >
+            </ion-col>
+
+            <ion-col size="1"></ion-col>
+            <ion-col size="3">
+              <div class="current">
+                <p style="color: black">CURRENT</p>
+                <p id="currentScorePlayer2" style="color: white"></p>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-content>
+    </ion-app>
+
+    <!--import for to use Ionicons without Ionic Framework -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
