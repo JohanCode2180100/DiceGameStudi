@@ -1,22 +1,21 @@
-const startGame = document.querySelector("#startGame");
-const active1 = document.querySelector(".active1");
-const active2 = document.querySelector(".active2");
-const rollDice = document.querySelector("#rollDice");
-const img = document.querySelector(".dicePictures");
-const victoryP1 = document.querySelector(".victoryplayer1");
-const victoryP2 = document.querySelector(".victoryplayer1");
-const hold = document.querySelector("#hold");
+// import domElement
+import {
+  startGame,
+  active1,
+  active2,
+  rollDice,
+  img,
+  hold,
+  currentScore_player1,
+  currentScore_player2,
+  roundScore_player1,
+  roundScore_player2,
+} from "./domElement.js";
 
-// Score round player
-const currentScore_player1 = document.getElementById("currentScorePlayer1");
-const currentScore_player2 = document.getElementById("currentScorePlayer2");
-const roundScore_player1 = document.querySelector("#roundScore1");
-const roundScore_player2 = document.querySelector("#roundScore2");
 let gamePlaying = false;
 let nb = 0;
 let activePlayer;
 let currentScore = 0;
-let globalScore = 0;
 
 let player1 = {
   currentScore: currentScore_player1,
