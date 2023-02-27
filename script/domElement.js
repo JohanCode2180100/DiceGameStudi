@@ -15,8 +15,8 @@ const img = document.querySelector(".dicePictures");
 const hold = document.querySelector("#hold");
 
 // currentScorePlayer
-const currentScore_player1 = document.getElementById("currentScorePlayer1");
-const currentScore_player2 = document.getElementById("currentScorePlayer2");
+const currentScore_player1 = document.querySelector("#currentScorePlayer1");
+const currentScore_player2 = document.querySelector("#currentScorePlayer2");
 //roundScorePlayer
 const roundScore_player1 = document.querySelector("#roundScore1");
 const roundScore_player2 = document.querySelector("#roundScore2");

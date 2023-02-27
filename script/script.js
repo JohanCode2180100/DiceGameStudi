@@ -31,7 +31,7 @@ const newGame = () => {
   //choice start player
   nb = Math.floor(Math.random() * 2) + 1;
   alert(`Player ${nb} start the game ...`);
-  // point player
+  // display point player
   if (nb === 1) {
     active1.style.visibility = "visible";
     active2.style.visibility = "hidden";
@@ -51,10 +51,10 @@ const newGame = () => {
 let interval;
 // dice display and interval display dice
 let imgDisplay = (rand) => {
-  // display dice 0.75s
+  // display dice 0.5s
   interval = setInterval(function () {
     img.src = `./assets/images/dice-0.png`;
-  }, 750);
+  }, 500);
   img.src = `./assets/images/dice-${rand}.png`;
 };
 

@@ -5,11 +5,9 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
 }
 ion-app {
   width: 100%;
-
   border: 5px solid brown;
 }
 ion-grid {
