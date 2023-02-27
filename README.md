@@ -54,7 +54,7 @@ de script côté client (5 points).
 ## Deployment
 
 
-https://tranquil-melomakarona-0602b3.netlify.app
+
 
 
 ## 🚀 the project 

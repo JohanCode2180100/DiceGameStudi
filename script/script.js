@@ -31,6 +31,7 @@ const newGame = () => {
   //choice start player
   nb = Math.floor(Math.random() * 2) + 1;
   alert(`Player ${nb} start the game ...`);
+  // point player
   if (nb === 1) {
     active1.style.visibility = "visible";
     active2.style.visibility = "hidden";
@@ -40,17 +41,29 @@ const newGame = () => {
     active1.style.visibility = "hidden";
     activePlayer = player2;
   }
+  // init score for all players
   currentScore_player1.textContent = 0;
   currentScore_player2.textContent = 0;
   roundScore_player1.textContent = 0;
   roundScore_player2.textContent = 0;
-  console.log(activePlayer); // check
 };
-console.log(gamePlaying);
-let imgDisplay = (rand) => (img.src = `./assets/images/dice-${rand}.png`);
-let rand = 0;
+
+let interval;
+// dice display and interval display dice
+let imgDisplay = (rand) => {
+  // display dice 0.75s
+  interval = setInterval(function () {
+    img.src = `./assets/images/dice-0.png`;
+  }, 750);
+  img.src = `./assets/images/dice-${rand}.png`;
+};
+
+//let imgDisplay = (img.src = `./assets/images/dice-0.png`);
+
 const toRollDice = () => {
   if (gamePlaying === true) {
+    //clear dice display on click
+    clearInterval(interval);
     let rand = Math.floor(Math.random() * 6) + 1;
     imgDisplay(rand);
     if (rand >= 2) {
@@ -65,7 +78,7 @@ const toRollDice = () => {
     alert("CLIQUER SUR NEW GAME POUR LANCER UNE PARTIE");
   }
 };
-
+//save the activePlayer currentScore
 const saveTheScore = () => {
   if (gamePlaying === true) {
     activePlayer.roundScore.textContent =
@@ -83,10 +96,13 @@ const saveTheScore = () => {
 //start New Game button
 startGame.addEventListener("click", newGame);
 
+//roll the dice
 rollDice.addEventListener("click", toRollDice);
 
+//save the score
 hold.addEventListener("click", saveTheScore);
 
+//next player and display point player
 let turnPlayer = () => {
   currentScore = 0;
   if (activePlayer === player1) {
